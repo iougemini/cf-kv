@@ -10,4 +10,4 @@ bindings = [
 
 [[migrations]]
 tag = "v1"
-new_classes = ["CanvasObject", "IndexObject"] 
+new_sqlite_classes = ["CanvasObject", "IndexObject"] 
