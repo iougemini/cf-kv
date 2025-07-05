@@ -2,7 +2,12 @@ name = "excalidraw-worker"
 main = "index.js"
 compatibility_date = "2023-08-01"
 
-[[kv_namespaces]]
-binding = "EXCALIDRAW_KV"
-id = "5a179f4ed85a429596434e5ebc7d3754"
-preview_id = "your-preview-kv-namespace-id-here" 
+[durable_objects]
+bindings = [
+  { name = "CANVAS_OBJECT", class_name = "CanvasObject" },
+  { name = "INDEX_OBJECT", class_name = "IndexObject" }
+]
+
+[[migrations]]
+tag = "v1"
+new_classes = ["CanvasObject", "IndexObject"] 
