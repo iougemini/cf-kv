@@ -2,9 +2,6 @@ name = "excalidraw-worker"
 main = "index.js"
 compatibility_date = "2023-08-01"
 
-[vars]
-API_TOKEN = "your-secret-api-token-here"
-
 [[kv_namespaces]]
 binding = "EXCALIDRAW_KV"
 id = "5a179f4ed85a429596434e5ebc7d3754"
