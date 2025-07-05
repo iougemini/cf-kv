@@ -26,7 +26,7 @@ export default {
         if (!id) {
           return setCorsHeaders(new Response("Invalid key format", { status: 400 }));
         }
-        const doId = env.CANVAS_OBJECT.idFromString(id);
+        const doId = env.CANVAS_OBJECT.idFromName(id);
         const stub = env.CANVAS_OBJECT.get(doId);
         return await stub.fetch(request);
       }
@@ -48,7 +48,7 @@ export default {
              return setCorsHeaders(new Response("Bulk operations must target a single canvas ID", { status: 400 }));
          }
 
-         const doId = env.CANVAS_OBJECT.idFromString(firstId);
+         const doId = env.CANVAS_OBJECT.idFromName(firstId);
          const stub = env.CANVAS_OBJECT.get(doId);
          return await stub.fetch(request);
       }
