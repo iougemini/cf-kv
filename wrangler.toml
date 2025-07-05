@@ -7,5 +7,5 @@ API_TOKEN = "your-secret-api-token-here"
 
 [[kv_namespaces]]
 binding = "EXCALIDRAW_KV"
-id = "your-kv-namespace-id-here"
+id = "5a179f4ed85a429596434e5ebc7d3754"
 preview_id = "your-preview-kv-namespace-id-here" 
